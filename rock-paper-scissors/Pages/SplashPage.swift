@@ -13,7 +13,7 @@ struct SplashPage: View {
     var body: some View {
         LogoView()
             .safeAreaPadding()
-            .background(Color.background)
+            .background(Color.accentColor)
             .onAppear {
                 Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
                     navigator.push(.game)
